@@ -10,7 +10,7 @@ build/
 *.egg
 .eggs/
 
-# Virtual environments
+# Virtual environments (use: python3 -m venv .venv && source .venv/bin/activate)
 .venv/
 venv/
 env/
