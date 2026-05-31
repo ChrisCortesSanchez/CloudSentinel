@@ -4,7 +4,6 @@ import pytest
 from freezegun import freeze_time
 from moto import mock_aws
 
-os.environ.setdefault("AWS_DEFAULT_REGION", "us-east-1")
 os.environ.setdefault("AUDIT_TABLE_NAME", "cloudsentinel-audit")
 
 from src.shared.audit_logger import AuditLogger

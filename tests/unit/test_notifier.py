@@ -5,7 +5,6 @@ import pytest
 from freezegun import freeze_time
 from moto import mock_aws
 
-os.environ.setdefault("AWS_DEFAULT_REGION", "us-east-1")
 os.environ.setdefault("SNS_TOPIC_ARN", "arn:aws:sns:us-east-1:123456789012:cloudsentinel-alerts")
 
 from src.shared.notifier import Notifier
